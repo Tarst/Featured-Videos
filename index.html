@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Videos</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/Logo.png" alt="" />
+      </div>
+      <div class="name">
+        <h1>Featured Videos</h1>
+      </div>
+      <div class="account">
+        <button>Sign up</button>
+        <button>Sign in</button>
+        <select name="language">
+          <option>EN</option>
+        </select>
+      </div>
+    </header>
+    <div class="container">
+      <div class="block_menu">
+        <nav>
+          <ul>
+            <li class="bt_menu" data="0">
+              <div class="circle">
+                <img src="img/Home.png" alt="" />
+              </div>
+              <p>home</p>
+            </li>
+            <li class="bt_menu activ" data="1">
+              <div class="circle line_videos">
+                <img src="img/Videos.png" alt="" />
+              </div>
+              <p>videos</p>
+            </li>
+            <li class="bt_menu" data="2">
+              <div class="circle">
+                <img src="img/Img.png" alt="" />
+              </div>
+              <p>images</p>
+            </li>
+            <li class="bt_menu" data="3">
+              <div class="circle">
+                <img src="img/Articles.png" alt="" />
+              </div>
+              <p>articles</p>
+            </li>
+            <li class="bt_menu" data="4">
+              <div class="circle">
+                <img src="img/Articles.png" alt="" />
+              </div>
+              <p>freebies</p>
+            </li>
+          </ul>
+        </nav>
+        <div class="search">
+          <input type="text" id="search" placeholder="Search" />
+          <button id="bt_search">
+            <img src="img/Search.png" alt="" />
+          </button>
+        </div>
+        <div class="block_tags">
+          <div class="logo_tags">
+            <img src="img/Icon_tags.png" alt="" />
+            <h2>Tags</h2>
+          </div>
+          <div class="tag">
+            <ul>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+              <li class="item_tag"><a>Video</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="block_about">
+          <h2>About Us</h2>
+          <p>
+            Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam eaque ipsa,
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt, explicabo.
+          </p>
+        </div>
+      </div>
+      <main>
+        <div class="player">
+          <iframe
+            src="https://www.youtube.com/embed/JgIG6d3JsZs"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            id="mmm"
+          ></iframe>
+        </div>
+        <div class="info">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+          <div class="block_info">
+            <img src="img/Share.png" alt="" />
+            <p id="share">75</p>
+            <img src="img/Like.png" alt="" />
+            <p id="like">5700</p>
+            <img src="img/Svz.png" alt="" />
+          </div>
+        </div>
+        <div class="bt_display">
+          <p>Change view:</p>
+          <button id="bt_line">
+            <img src="img/Line.png" alt="" />
+          </button>
+          <button id="bt_blocks">
+            <img src="img/Blocks.png" alt="" />
+          </button>
+        </div>
+        <div class="block_video"></div>
+      </main>
+    </div>
+    <footer>
+      <div class="links">
+        <p>The gallaria is designed By Css Author</p>
+        <a href="#" class="border_line">Home</a>
+        <a href="#" class="border_line">About Us</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="network">
+        <ul>
+          <li><img src="img/Facebook.png" alt="facebook" /></li>
+          <li><img src="img/twitter.png" alt="twitter" /></li>
+          <li><img src="img/mail.png" alt="mail" /></li>
+        </ul>
+      </div>
+    </footer>
+
+    <template id="video">
+      <div class="bt_video" data="">
+        <div class="play_video">
+          <img src="img/Play.png" alt="" />
+        </div>
+        <div class="dec_video">
+          <div class="dec">
+            <p id="title"></p>
+            <img src="img/Like_gray.png" alt="" />
+            <p class="not" id="liksCount"></p>
+            <img src="img/Comment.png" alt="" />
+            <p class="not" id="commentsCount"></p>
+            <img src="img/CLock.png" alt="" />
+            <p class="not" id="dateCreate"></p>
+            <hr />
+            <p id="description"></p>
+          </div>
+          <div class="block1">
+            <img src="img/Arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </template>
+    <script src="js/json.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
